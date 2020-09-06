@@ -23,8 +23,8 @@ const  io  = require ('socket.io')(server )
 emit - 서버는 클라이언트에게로, 클라이언트는 서버에게로 데이터를 보낸다
 on - 서버는 클라이언트에게로, 클라이언트는 서벙에게로 데이터를 받는다.
 
-또한 서버에서 보내온 다른 클라이언트의 영상을 받아오기 위해 ejs를 이용하였다. 
-app .set ('view engine' ,'ejs')
+또한 html템플릿을 사용하기 쉽게 ejs를 이용하였다. 
+이 부분은 자바의 jsp와 비슷하다고 생각이 들었다. app .set ('view engine' ,'ejs')
 
 마지막으로 uuid를 이용하여 방마다 다른 고유의 아이디를 만들 수 있도록 하였다. 
 const  { v4 : uuidV4  } = require ('uuid')
